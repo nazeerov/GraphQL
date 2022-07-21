@@ -36,6 +36,8 @@ android {
 
 dependencies {
 
+    def coroutines_version = "1.6.1"
+
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.google.android.material:material:1.6.1'
@@ -52,6 +54,8 @@ dependencies {
 //okhttp3
     implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.2'
     implementation "com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2"
+
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines_version"
 }
 apollo {
     packageName.set("com.nazirov.android_graphql")
